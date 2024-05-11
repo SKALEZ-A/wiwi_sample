@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.css-xwyda9 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 1px solid #F57A68;
+    background: rgba(0, 0, 0, 0.60);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 690px;
+    height: 113px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.first-img img {
+    height: 120px;
+    width: 650px;
+}
+.first-img {
+    display: flex;
+    width: auto;
+    max-width: 750px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.new-para {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    height: 100%;
+    
+}
+.new-para .second-img img {
+    height: 120px;
+    width: 650px;
+}

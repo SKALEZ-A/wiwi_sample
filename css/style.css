@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --orange: #FF9D2E;
+  --gray: #5F6368;
+}
+
+body{
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.fs-10{
+    font-size: 10px;
+}
+
+.fs-12{
+    font-size: 12px;
+}
+
+.fs-13{
+    font-size: 13px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+
+
+.bg-main main{
+    height: 612px;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-orange{
+    color: var(--orange) !important;
+}
+
+.btncust{
+    padding: 10px;
+    width: 130px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.text-gray{
+    color: var(--gray) !important;
+}
+
+.post-ab{
+  
+}
+
+.post-ab img{
+    width: 36vw;
+}
+
+.bg-orange{
+    background-color: var(--orange);
+}
+
+.post-mbl{
+    position: absolute;
+    bottom: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+.bg-blurr{
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(10px);
+}
+
+/*=============================================================== media query ===============================================================*/
+
+@media (max-width: 991px){
+    body{
+        overflow: auto;
+    }
+    .mbl-100{
+        width: 100%;
+    }
+
+    .bg-main{
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    .bg-main main{
+        height: auto;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .post-ab img{
+       transform: translateY(-18px);
+       width: 83%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1380px){
+    .post-ab img{
+       transform: translateY(-30px);
+       width: 40vw;
+    }
+}
